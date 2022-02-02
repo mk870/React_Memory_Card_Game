@@ -5,6 +5,7 @@ export const Globalstyles = createGlobalStyle`
     display: flex;
     justify-content: center;
     color:white;
+    overflow:${({overflow})=>overflow};
     
   }
   
@@ -14,7 +15,7 @@ export const Globalstyles = createGlobalStyle`
     align-items:center;
     justify-content:center;
     padding:10px;
-    
+    text-align:center;
   }
   .card-container{
     display: grid;

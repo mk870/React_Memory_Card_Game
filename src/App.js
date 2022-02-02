@@ -83,7 +83,7 @@ function App() {
   
   useEffect(()=>{
     if(matchedcards === 42){
-      setTimeout(()=>{setGamewon(true)},1500) 
+      setTimeout(()=>{setGamewon(true)},1000) 
     }
   },[matchedcards])
 
@@ -99,7 +99,7 @@ function App() {
   ;
   return (
     <div className="App">
-      <Globalstyles/>
+      <Globalstyles overflow={gamewon || howtoplay ? 'hidden':'none'}/>
       <h1>Memory Monster Card Game</h1>
       <Button onClick={() =>setHowtoplay(true)}>How to play</Button>
       <Button onClick={shuffle}>Start New Game</Button>

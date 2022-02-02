@@ -14,7 +14,7 @@ export default function Modal({shuffle, turns}) {
         <h4>GAME OVER</h4>
         <span>Congratulations</span>
         <span>You won in {turns} Turns</span>
-        <img src={gif} alt="gif" height={400} width={400}/>
+        <img src={gif} alt="gif" />
         <Button onClick={shuffle}>Start new Game</Button>
       </ModalStyle>
       </div>
