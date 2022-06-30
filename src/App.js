@@ -101,8 +101,11 @@ function App() {
     <div className="App">
       <Globalstyles overflow={gamewon || howtoplay ? 'hidden':'none'}/>
       <h1>Memory Monster Card Game</h1>
-      <Button onClick={() =>setHowtoplay(true)}>How to play</Button>
-      <Button onClick={shuffle}>Start New Game</Button>
+      <div className="btn">
+        <Button onClick={() =>setHowtoplay(true)}>How to play</Button>
+        <Button onClick={shuffle}>Start New Game</Button>
+      </div>
+      
       <div className="card-container">
         {cards.map((card)=>(
           <Cards
@@ -117,7 +120,7 @@ function App() {
       </div>
       {gamewon && <Modal shuffle ={shuffle} turns={turns}/>}
       {howtoplay && <Howtoplay backtogame={backtogame}/>}
-      <p>Turns:{turns}</p>
+      <p>Turns: {turns}</p>
     </div>
   );
 }

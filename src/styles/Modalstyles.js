@@ -4,6 +4,7 @@ export const ModalStyle = styled.div`
   display: flex;
   flex-direction:column;
   align-items:center;
+  
   padding:10px;
   
   & > img{
@@ -23,5 +24,6 @@ export const ModalStyle = styled.div`
   z-index: 10;
   width: 70vw;
   max-width: 500px;
+  text-align:center;
   background-color: rgba(210, 210, 252, 0.726);
 `

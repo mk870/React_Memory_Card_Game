@@ -16,6 +16,12 @@ export const Globalstyles = createGlobalStyle`
     justify-content:center;
     padding:10px;
     text-align:center;
+    .btn{
+      width:80%;
+    }
+    p{
+      font-size:20px;
+    }
   }
   .card-container{
     display: grid;
@@ -61,6 +67,13 @@ export const Globalstyles = createGlobalStyle`
     
   }
   @media (max-width:680px){
+    .btn{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      
+    }
     .card-container{
       display: grid;
       grid-template-columns:1fr 1fr;
