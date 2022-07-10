@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# React Memory Card Game (monstercardgame) 
+<img src="https://i.ibb.co/VxVzgH4/Card-game-App.png" alt="Card-game-App" border="0">
+This is a memory card game, to try to match 12 card monsters every turn.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Project Summary**
+* Created single page application.
+* Created 2 modals using reactDom.createPortal method. 
+* Used css styles to flip the cards using different css properties.
+* Also used useEffect and useState hooks to keep track of the flipped and matched cards.
+* Finally used styled-components to style the entire application.
 
-## Available Scripts
+### **Resources Used**
+***
+**React Version**: 17.0.2  
+**Languange used**: Javascript
 
-In the project directory, you can run:
+**Packages**: react and styled-components    
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 
-### `npm start`
+**Run app locally (Run)**: git clone (the url to the GitHub repo) then  npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**APIs**: none.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### **Cards Display**
+***
+Used  6 monster images from Google and displayed them using html and css after duplicating them to a total of 12.  
+Used a single black card image as the backside of all the monster cards.  
+Used conditional classnames and css to flip the cards every click event on unmatched cards.  
+CSS properties applied for card flipping were:
+* Rotate
+* Transform
+* Position
+* Transition
 
-### `npm test`
+Used 3 useEffect hooks to keep track of the card states like matched,flipped,cardpicks(firstpick and secondpick),gamestatus(if user has won or not) and turns played.
+### **Modals**
+***
+After the game is won, a modal is used to show a congraturatory message using reactDom method called createPortal. Also another modal is used to show the user the rules of the game.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.ibb.co/6nzpzQP/Card-game-App-1.png" alt="Card-game-App-1" border="0">
 
-### `npm run build`
+### **Productionization**
+***
+In this step, I ran the npm run build command to build the application for production and deployed it on netlify.  
+**Live Application**: [MemoryMonsterCardGame](https://monstercardgame.netlify.app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
